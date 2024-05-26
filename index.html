@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viweport" content="width=device-width, initial-scale=1.0">
+  <title> Survey Form </title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="content">
+    <main>
+  <header>  <h1 id="title"> Social Media Survey </h1>
+    <p id="description">Your opinions are important to us</p></header>
+    <section>
+      <form id="survey-form"  method="post">
+       <fieldset> <label for="name" id="name-label">Enter Your Name:
+          <input type="text" id="name" placeholder="Type Here" required>
+          </label>
+        <label for="email" id="email-label">Enter Your Email:
+          <input type="email" id="email" placeholder="Type Here" required>
+          </label>
+        <label for="address" id="address-label">Enter Your Address:
+          <input type="text"  id="address" placeholder="Type Here" required>
+          </label>
+        <label for="number" id="number-label" >Your Age:
+          <input type="number" id="number" min="13" max="90" placeholder="Type Here">
+          </label>
+          </fieldset>
+       <fieldset>
+         <label for="dropdown">Which of the Social Media accounts do you currently use ?
+         <select id="dropdown">
+<option value="one">Instagram</option>
+<option value="two">Facebook</option>
+<option value="three">Twitter</option>
+<option value="four">Linkedln</option>
+<option value="five">Thread</option>
+<option value="other">Other</option>
+           </select>
+         </fieldset>
+         <fieldset class="radio">
+           <legend>On average how much time do you spend on social media?</legend>
+            <label for="avetime"> <input type="radio" id="avetime" name="avetime" value="ave">Less than 30 minutes</label>
+              <label for="avetime1"> <input type="radio" id="avetime1" name="avetime" value="ave1">1-2 hours </label>
+             <label for="avetime2">  <input type="radio" id="avetime2" name="avetime" value="ave2">3-4hours</label>            
+              <label for="avetime3">  <input type="radio" id="avetime3" name="avetime" value="ave3">More than 4 Hours</label>
+
+           </fieldset>
+           <fieldset class="checkbox">
+             <legend>What are your purposes of using social media</legend>
+            <label for="purpose1"> <input type="checkbox" name="purposes" id="purpose1" value="1">Keep up with friends</label>
+            <label for="purpose2"> <input type="checkbox" name="purposes" id="purpose2" value="2">Socialize</label>
+            <label for="purpose3"> <input type="checkbox" name="purposes" id="purpose3" value="3">Promote Productes/Services</label>
+            <label for="purpose4"> <input type="checkbox" name="purposes" id="purpose4" value="4">Event Plannig</label>
+           <label for="5">  <input type="checkbox" name="purposes" id="purpose5" value="5">Others</label>
+          </fieldset>
+          <fieldset class="textarea">
+            <legend>Is Social Media harmful or helpful - What do You think ? </legend> 
+            <textarea cols="50" rows="10" placeholder="Type Here" name="harmfulorhelpful" id="harmfulorhelpful"></textarea>
+            </fieldset>
+            <footer>
+              <input type="submit" id="submit">
+              </footer>
+      </form>
+    </section>
+    </main>
+    </div>
+    </body>
+  </html>
